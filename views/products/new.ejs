@@ -5,7 +5,7 @@
 <body>
     <%- include('../partials/navbar') %> 
 
-    <h1>Add A Product</h1>
+    <h1>Add A Book</h1>
     <form action="/products" method="POST" >
         <label for="name">Product Name</label>
         <input type="text" name="name" id="name" placeholder="product name">
@@ -17,7 +17,7 @@
             <option value="<%=category%>"><%=category%></option>
                 <% } %> 
         </select>
-        <button>Add Product</button>
+        <button>Add Book</button>
     </form>
     
 </body>
