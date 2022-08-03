@@ -1,12 +1,12 @@
 <%- include('../partials/head') %> 
-    <title>Edit Product</title>
+    <title>Edit Book</title>
 </head>
 <body>
     <%- include('../partials/navbar') %> 
 
-    <h1>Edit A Product</h1>
+    <h1>Edit A Book</h1>
     <form action="/products/<%=product._id%>?_method=PUT" method="POST" >
-        <label for="name">Product Name</label>
+        <label for="name">Book Name</label>
         <input type="text" name="name" id="name" placeholder="product name" value="<%=product.name%>">
         <label for="price">Price (Unit)</label>
         <input type="number" name="price" id="price" placeholder="product price" value="<%= product.price %>">
@@ -16,7 +16,7 @@
                 <option value="<%=category%>" <%= product.category === category ? 'selected': '' %>><%=category%></option>
                     <% } %> 
         </select>
-        <button>Add Product</button>
+        <button>Add Book</button>
 
     </form>
     <a href="/products/<%= product._id %> ">Cancel</a>
