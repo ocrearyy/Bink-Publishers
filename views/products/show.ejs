@@ -1,8 +1,7 @@
-<%- include('../partials/head') %> 
-    <title><%= product.name %></title>
-</head>
-<body>
-    <%- include('../partials/navbar') %> 
+<% layout('layouts/boilerplate') %> 
+
+
+
 
     <h1><%= product.name %></h1>
     <ul>
@@ -15,5 +14,3 @@
     <button>DELETE</button>
 </form>
 
-</body>
-</html>

@@ -1,8 +1,8 @@
-<%- include('../partials/head') %> 
-    <title>Edit Book</title>
-</head>
+<% layout('layouts/boilerplate') %> 
+
+
+
 <body>
-    <%- include('../partials/navbar') %> 
 
     <h1>Edit A Book</h1>
     <form action="/products/<%=product._id%>?_method=PUT" method="POST" >
@@ -21,6 +21,3 @@
     </form>
     <a href="/products/<%= product._id %> ">Cancel</a>
 
-    
-</body>
-</html>

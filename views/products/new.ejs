@@ -1,9 +1,6 @@
-<%- include('../partials/head') %> 
-    <title>Document</title>
-</head>
+<% layout('layouts/boilerplate') %> 
 
-<body>
-    <%- include('../partials/navbar') %> 
+
 
     <h1>Add A Book</h1>
     <form action="/products" method="POST" >
@@ -19,8 +16,6 @@
         </select>
         <button>Add Book</button>
     </form>
-    
-</body>
-</html>
+
 
 
